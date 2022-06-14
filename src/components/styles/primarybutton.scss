@@ -29,6 +29,11 @@
   border: 1px solid $google_red;
 }
 
+.PrimaryButton.purple {
+  background-color: $text_purple;
+  border: 1px solid $text_purple;
+}
+
 .PrimaryButton:hover {
   opacity: 0.8;
 }
