@@ -1,0 +1,53 @@
+// import the global styles
+@import "../../globals";
+
+.UiDesigns {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+        // styles for when the website is being displayed on mobile (media queries)
+        @media screen and (max-width: $mobile-size) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__btn {
+            &__secondary {
+                border: solid 3px $text_purple;
+                background-color: none;
+                border-radius: 4px;
+                box-sizing: border-box;
+                color: $text_purple;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.15;
+                overflow: visible;
+                padding: 10px 25px;
+                text-align: center;
+                transition: all 80ms ease-in-out;
+            }
+        }
+    }
+
+    .showcase {
+
+        &__list {
+            display: flex;
+
+            &__item {
+                text-align: center;
+            }
+        }
+    }
+}

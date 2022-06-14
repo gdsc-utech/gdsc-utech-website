@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import EventPage from './pages/EventPage';
 import ProjectsPage from './pages/ProjectsPage';
+import UiDesigns from './pages/events/UiDesigns';
 import RegistrationPage from './pages/RegistrationPage';
 
 // workaround to ensure jquery is accessible by Bootstrap
@@ -37,6 +38,7 @@ ReactDOM.render(
         <Route path='/' element={ <HomePage/> }/>
         <Route path='/events' element={ <EventPage/> }/>
         <Route path='/projects' element={ <ProjectsPage/> }/>
+        <Route path='/events/ui' element={ <UiDesigns/>}/>
         <Route path='/register' element={ <RegistrationPage/> }/>
       </Routes>
 
